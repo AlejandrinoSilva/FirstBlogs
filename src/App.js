@@ -2,7 +2,6 @@ import React, { Fragment, Component } from 'react';
 import { Nav, Navbar, Container, Jumbotron as Jumbo } from 'react-bootstrap';
 import styled from 'styled-components';
 import './carousel.css';
-import book from './book.png';
 
 const StylesNav = styled.div`
     .navbar{
@@ -72,7 +71,7 @@ class App extends Component {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ml-auto">
-                <Nav.Item><Nav.Link href="/"><img src={book} alt="Book" height="64" width="64" /></Nav.Link></Nav.Item>
+                <Nav.Item><Nav.Link href="/"><img src="https://github.com/AlejandrinoSilva/FirstBlogs/blob/gh-pages/book.png" alt="Book" height="15px" width="15px" /></Nav.Link></Nav.Item>
                 <Nav.Item><Nav.Link href="/contact">Contact</Nav.Link></Nav.Item>
                 <Nav.Item><Nav.Link href="/about">About</Nav.Link></Nav.Item>
               </Nav>
