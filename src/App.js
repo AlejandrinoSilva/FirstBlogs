@@ -1,8 +1,5 @@
 import React, { Fragment, Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import logo from './logo.svg';
-import './App.css';
-import { Nav, Navbar, Container } from 'react-bootstrap';
+import { Nav, Navbar, Container, Jumbotron as Jumbo } from 'react-bootstrap';
 import styled from 'styled-components';
 
 const StylesNav = styled.div`
@@ -34,6 +31,31 @@ const StylesHome = styled.div`
     }
     
 `;
+const StylesJum = styled.div`
+    .jumbo {
+        background-color: #000;
+        color: #fff;
+        height: 200px;
+        position: relative;
+        z-index: -2;
+    }
+
+    .overlay {
+        background-color: #000;
+        opacity: 0.6;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+    }
+
+    .tit {
+        font-family: 'EB Garamond', serif;
+        font-size: 69px;
+    }
+`;
 
 class App extends Component {
   render() {
@@ -52,6 +74,16 @@ class App extends Component {
             </Navbar.Collapse>
           </Navbar>
         </StylesNav>
+
+        <StylesJum>
+          <Jumbo fluid className="jumbo">
+            <div className="overlay"></div>
+            <Container>
+              <h1 className="tit">Bienvenido</h1>
+              <p>Podra leer todos los mejores poemas de mi autoria desde este portal</p>
+            </Container>
+          </Jumbo>
+        </StylesJum>
 
         <Container>
           <StylesHome>
