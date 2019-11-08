@@ -34,7 +34,6 @@ const StylesHome = styled.div`
 const StylesCar = styled.div`
 /* Carousel base class */
     .carousel {
-      position: relative;
       margin-bottom: 4rem;
     }
 /* Since positioning the image, we need to help out the caption */
@@ -54,6 +53,9 @@ const StylesCar = styled.div`
       min-width: 100%;
       height: 32rem;
     }
+`;
+const StylesMain = styled.main`
+    position: relative;
 `;
 const StylesJum = styled.div`
     .jumbo {
@@ -81,6 +83,7 @@ const StylesJum = styled.div`
         font-size: 69px;
     }
 `;
+
 
 class App extends Component {
   render() {
@@ -110,7 +113,7 @@ class App extends Component {
           </Jumbo>
         </StylesJum>
 
-        <main role="main">
+        <StylesMain>
           <StylesCar>
             <div id="myCarousel" className="carousel slide" data-ride="carousel">
               <ol className="carousel-indicators">
@@ -123,7 +126,7 @@ class App extends Component {
                   <svg className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777" /></svg>
                   <div className="container">
                     <div className="carousel-caption text-left">
-                      <h1>Example headline.</h1>
+                      <h1>Example headline. 2019</h1>
                       <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                     </div>
                   </div>
@@ -157,7 +160,7 @@ class App extends Component {
               </a>
             </div>
           </StylesCar>
-        </main>
+        </StylesMain>
 
         <Container>
 
