@@ -33,6 +33,7 @@ const StylesHome = styled.div`
 `;
 const StylesJum = styled.div`
     .jumbo {
+        background: url(https://www.pixelstalk.net/wp-content/uploads/2016/04/Blue-rose-wallpaper-HD.jpg) no-repeat;
         background-color: #000;
         color: #fff;
         height: 200px;
