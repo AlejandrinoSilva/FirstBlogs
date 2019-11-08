@@ -2,7 +2,7 @@
   "name": "blogpage",
   "version": "0.1.0",
   "private": true,
-  "homepages": "https://alejandrinosilva.github.io/FirstWebPage/",
+  "homepage": "https://alejandrinosilva.github.io/FirstWebPage/",
   "dependencies": {
     "@babel/core": "^7.7.2",
     "@babel/plugin-proposal-class-properties": "^7.7.0",
@@ -58,6 +58,5 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AlejandrinoSilva/FirstWebPage/issues"
-  },
-  "homepage": "https://github.com/AlejandrinoSilva/FirstWebPage#readme"
+  }
 }
