@@ -54,9 +54,7 @@ const StylesCar = styled.div`
       height: 32rem;
     }
 `;
-const StylesMain = styled.main`
-    position: relative;
-`;
+
 const StylesJum = styled.div`
     .jumbo {
         background: url(https://www.pixelstalk.net/wp-content/uploads/2016/04/Blue-rose-wallpaper-HD.jpg) no-repeat;
@@ -113,54 +111,52 @@ class App extends Component {
           </Jumbo>
         </StylesJum>
 
-        <StylesMain>
-          <StylesCar>
-            <div id="myCarousel" className="carousel slide" data-ride="carousel">
-              <ol className="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-              </ol>
-              <div className="carousel-inner">
-                <div className="carousel-item active">
-                  <svg className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777" /></svg>
-                  <div className="container">
-                    <div className="carousel-caption text-left">
-                      <h1>Example headline. 2019</h1>
-                      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="carousel-item">
-                  <svg className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777" /></svg>
-                  <div className="container">
-                    <div className="carousel-caption">
-                      <h1>Another example headline.</h1>
-                      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="carousel-item">
-                  <svg className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777" /></svg>
-                  <div className="container">
-                    <div className="carousel-caption text-right">
-                      <h1>One more for good measure.</h1>
-                      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    </div>
+        <StylesCar>
+          <div id="myCarousel" className="carousel slide" data-ride="carousel">
+            <ol className="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div className="carousel-inner">
+              <div className="carousel-item active">
+                <svg className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777" /></svg>
+                <div className="container">
+                  <div className="carousel-caption text-left">
+                    <h1>Example headline. 2019</h1>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                   </div>
                 </div>
               </div>
-              <a className="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span className="sr-only">Previous</span>
-              </a>
-              <a className="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="sr-only">Next</span>
-              </a>
+              <div className="carousel-item">
+                <svg className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777" /></svg>
+                <div className="container">
+                  <div className="carousel-caption">
+                    <h1>Another example headline.</h1>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="carousel-item">
+                <svg className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777" /></svg>
+                <div className="container">
+                  <div className="carousel-caption text-right">
+                    <h1>One more for good measure.</h1>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  </div>
+                </div>
+              </div>
             </div>
-          </StylesCar>
-        </StylesMain>
+            <a className="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span className="sr-only">Previous</span>
+            </a>
+            <a className="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+              <span className="carousel-control-next-icon" aria-hidden="true"></span>
+              <span className="sr-only">Next</span>
+            </a>
+          </div>
+        </StylesCar>
 
         <Container>
 
