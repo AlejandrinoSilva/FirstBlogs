@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const StylesNav = styled.div`
     .navbar{
-        background-color: black;
+        background-color: #3e4f6a;
         position: relative;
     }
 
