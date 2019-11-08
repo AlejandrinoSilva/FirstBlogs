@@ -32,6 +32,7 @@ const StylesHome = styled.div`
     
 `;
 const StylesCar = styled.div`
+    position: relative;
 /* Carousel base class */
     .carousel {
       margin-bottom: 4rem;
