@@ -2,7 +2,7 @@
   "name": "blogpage",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://alejandrinosilva.github.io/FirstWebPage/",
+  "homepage": "https://alejandrinosilva.github.io/FirstBlogs/",
   "dependencies": {
     "@babel/core": "^7.7.2",
     "@babel/plugin-proposal-class-properties": "^7.7.0",
@@ -52,11 +52,11 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlejandrinoSilva/FirstWebPage.git"
+    "url": "git+https://github.com/AlejandrinoSilva/FirstBlogs.git"
   },
   "author": "Ramón Silva",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AlejandrinoSilva/FirstWebPage/issues"
+    "url": "https://github.com/AlejandrinoSilva/FirstBlogs/issues"
   }
 }
