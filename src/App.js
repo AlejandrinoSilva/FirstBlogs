@@ -112,7 +112,7 @@ class App extends Component {
           </Jumbo>
         </StylesJum>
 
-        <StylesCar>
+        <StylesHome>
           <div id="myCarousel" className="carousel slide" data-ride="carousel">
             <ol className="carousel-indicators">
               <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
@@ -157,7 +157,7 @@ class App extends Component {
               <span className="sr-only">Next</span>
             </a>
           </div>
-        </StylesCar>
+        </StylesHome>
 
         <Container>
 
