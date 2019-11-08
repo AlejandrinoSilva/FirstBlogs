@@ -1,5 +1,5 @@
 import React, { Fragment, Component } from 'react';
-import { Nav, Navbar, Container, Jumbotron as Jumbo } from 'react-bootstrap';
+import { Navbar, Container, Jumbotron as Jumbo } from 'react-bootstrap';
 import styled from 'styled-components';
 import './carousel.css';
 
