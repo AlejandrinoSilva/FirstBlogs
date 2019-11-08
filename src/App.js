@@ -1,7 +1,6 @@
 import React, { Fragment, Component } from 'react';
 import { Nav, Navbar, Container, Jumbotron as Jumbo } from 'react-bootstrap';
 import styled from 'styled-components';
-import './carousel.css';
 
 const StylesNav = styled.div`
     .navbar{
