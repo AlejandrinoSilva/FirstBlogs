@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/AlejandrinoSilva/FirstWebPage/static/css/main.b100e6da.chunk.css",
-    "main.js": "/AlejandrinoSilva/FirstWebPage/static/js/main.c2d0160b.chunk.js",
-    "main.js.map": "/AlejandrinoSilva/FirstWebPage/static/js/main.c2d0160b.chunk.js.map",
-    "runtime-main.js": "/AlejandrinoSilva/FirstWebPage/static/js/runtime-main.bfa4cf3d.js",
-    "runtime-main.js.map": "/AlejandrinoSilva/FirstWebPage/static/js/runtime-main.bfa4cf3d.js.map",
-    "static/js/2.ea7e21b4.chunk.js": "/AlejandrinoSilva/FirstWebPage/static/js/2.ea7e21b4.chunk.js",
-    "static/js/2.ea7e21b4.chunk.js.map": "/AlejandrinoSilva/FirstWebPage/static/js/2.ea7e21b4.chunk.js.map",
-    "index.html": "/AlejandrinoSilva/FirstWebPage/index.html",
-    "precache-manifest.e84230b5bbbcf11eae7d577b99b8bb38.js": "/AlejandrinoSilva/FirstWebPage/precache-manifest.e84230b5bbbcf11eae7d577b99b8bb38.js",
-    "service-worker.js": "/AlejandrinoSilva/FirstWebPage/service-worker.js",
-    "static/css/main.b100e6da.chunk.css.map": "/AlejandrinoSilva/FirstWebPage/static/css/main.b100e6da.chunk.css.map",
-    "static/media/logo.svg": "/AlejandrinoSilva/FirstWebPage/static/media/logo.25bf045c.svg"
+    "main.css": "/FirstWebPage/static/css/main.b100e6da.chunk.css",
+    "main.js": "/FirstWebPage/static/js/main.b4071f26.chunk.js",
+    "main.js.map": "/FirstWebPage/static/js/main.b4071f26.chunk.js.map",
+    "runtime-main.js": "/FirstWebPage/static/js/runtime-main.95e42028.js",
+    "runtime-main.js.map": "/FirstWebPage/static/js/runtime-main.95e42028.js.map",
+    "static/js/2.ea7e21b4.chunk.js": "/FirstWebPage/static/js/2.ea7e21b4.chunk.js",
+    "static/js/2.ea7e21b4.chunk.js.map": "/FirstWebPage/static/js/2.ea7e21b4.chunk.js.map",
+    "index.html": "/FirstWebPage/index.html",
+    "precache-manifest.81527c5b694eedec9a6735849fa0a551.js": "/FirstWebPage/precache-manifest.81527c5b694eedec9a6735849fa0a551.js",
+    "service-worker.js": "/FirstWebPage/service-worker.js",
+    "static/css/main.b100e6da.chunk.css.map": "/FirstWebPage/static/css/main.b100e6da.chunk.css.map",
+    "static/media/logo.svg": "/FirstWebPage/static/media/logo.25bf045c.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.bfa4cf3d.js",
+    "static/js/runtime-main.95e42028.js",
     "static/js/2.ea7e21b4.chunk.js",
     "static/css/main.b100e6da.chunk.css",
-    "static/js/main.c2d0160b.chunk.js"
+    "static/js/main.b4071f26.chunk.js"
   ]
 }
