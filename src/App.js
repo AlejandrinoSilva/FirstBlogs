@@ -8,7 +8,7 @@ const StylesNav = styled.div`
         position: relative;
     }
 
-    .navbar-brand {
+    .navbar-brand, .navbar-nav .nav-link {
         color: white;
         &:hover {
             color:white;
@@ -70,9 +70,10 @@ class App extends Component {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ml-auto">
-                <Nav.Item><Nav.Link href="/"><img src="https://github.com/AlejandrinoSilva/FirstBlogs/blob/gh-pages/book.png" alt="Book" height="15px" width="15px" /></Nav.Link></Nav.Item>
-                <Nav.Item><Nav.Link href="/contact">Contact</Nav.Link></Nav.Item>
-                <Nav.Item><Nav.Link href="/about">About</Nav.Link></Nav.Item>
+                <Nav.Item><Nav.Link href="https://www.facebook.com/ramon.themax">Facebook</Nav.Link></Nav.Item>
+                <Nav.Item><Nav.Link href="https://www.linkedin.com/in/ramon-alejandrino-silva">LinkedIn</Nav.Link></Nav.Item>
+                <Nav.Item><Nav.Link href="https://twitter.com/ralejandrino">Twitter</Nav.Link></Nav.Item>
+                <Nav.Item><Nav.Link href="https://github.com/AlejandrinoSilva/">GitHub</Nav.Link></Nav.Item>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
