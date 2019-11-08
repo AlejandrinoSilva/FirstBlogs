@@ -1,5 +1,5 @@
 import React, { Fragment, Component } from 'react';
-import { Navbar, Container, Jumbotron as Jumbo } from 'react-bootstrap';
+import { Nav, Navbar, Container, Jumbotron as Jumbo } from 'react-bootstrap';
 import styled from 'styled-components';
 import './carousel.css';
 
@@ -9,7 +9,7 @@ const StylesNav = styled.div`
         position: relative;
     }
 
-    .navbar-brand, .navbar-nav .nav-link {
+    .navbar-brand {
         color: white;
         &:hover {
             color:white;
@@ -67,7 +67,15 @@ class App extends Component {
       <Fragment>
         <StylesNav>
           <Navbar expand="lg fixed-top">
-            <Navbar.Brand href="/">Poemas del Alma</Navbar.Brand>
+            <Navbar.Brand href="/">Mi primer blog con React Js</Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="ml-auto">
+                <Nav.Item><Nav.Link href="/"><img src="./book.png" alt="Book" /></Nav.Link></Nav.Item>
+                <Nav.Item><Nav.Link href="/contact">Contact</Nav.Link></Nav.Item>
+                <Nav.Item><Nav.Link href="/about">About</Nav.Link></Nav.Item>
+              </Nav>
+            </Navbar.Collapse>
           </Navbar>
         </StylesNav>
 
@@ -76,7 +84,7 @@ class App extends Component {
             <div className="overlay"></div>
             <Container>
               <h1 className="tit">Bienvenido</h1>
-              <p>Podra leer todos los mejores poemas de mi autoria desde este portal</p>
+              <p>Este es mi primer blog creado con ReactJs todavia esta en preparacion</p>
             </Container>
           </Jumbo>
         </StylesJum>
