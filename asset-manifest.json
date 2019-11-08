@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/FirstWebPage/static/css/main.34de6062.chunk.css",
-    "main.js": "/FirstWebPage/static/js/main.49bbff15.chunk.js",
-    "main.js.map": "/FirstWebPage/static/js/main.49bbff15.chunk.js.map",
-    "runtime-main.js": "/FirstWebPage/static/js/runtime-main.95e42028.js",
-    "runtime-main.js.map": "/FirstWebPage/static/js/runtime-main.95e42028.js.map",
-    "static/js/2.81ffc748.chunk.js": "/FirstWebPage/static/js/2.81ffc748.chunk.js",
-    "static/js/2.81ffc748.chunk.js.map": "/FirstWebPage/static/js/2.81ffc748.chunk.js.map",
-    "index.html": "/FirstWebPage/index.html",
-    "precache-manifest.174111a054e404b12980550651c6432c.js": "/FirstWebPage/precache-manifest.174111a054e404b12980550651c6432c.js",
-    "service-worker.js": "/FirstWebPage/service-worker.js",
-    "static/css/main.34de6062.chunk.css.map": "/FirstWebPage/static/css/main.34de6062.chunk.css.map"
+    "main.css": "/FirstBlogs/static/css/main.34de6062.chunk.css",
+    "main.js": "/FirstBlogs/static/js/main.c75d5234.chunk.js",
+    "main.js.map": "/FirstBlogs/static/js/main.c75d5234.chunk.js.map",
+    "runtime-main.js": "/FirstBlogs/static/js/runtime-main.6334f18b.js",
+    "runtime-main.js.map": "/FirstBlogs/static/js/runtime-main.6334f18b.js.map",
+    "static/js/2.231d86e4.chunk.js": "/FirstBlogs/static/js/2.231d86e4.chunk.js",
+    "static/js/2.231d86e4.chunk.js.map": "/FirstBlogs/static/js/2.231d86e4.chunk.js.map",
+    "index.html": "/FirstBlogs/index.html",
+    "precache-manifest.23f82324fb04ae03bd6779932f85e723.js": "/FirstBlogs/precache-manifest.23f82324fb04ae03bd6779932f85e723.js",
+    "service-worker.js": "/FirstBlogs/service-worker.js",
+    "static/css/main.34de6062.chunk.css.map": "/FirstBlogs/static/css/main.34de6062.chunk.css.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.95e42028.js",
-    "static/js/2.81ffc748.chunk.js",
+    "static/js/runtime-main.6334f18b.js",
+    "static/js/2.231d86e4.chunk.js",
     "static/css/main.34de6062.chunk.css",
-    "static/js/main.49bbff15.chunk.js"
+    "static/js/main.c75d5234.chunk.js"
   ]
 }
