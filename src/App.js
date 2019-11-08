@@ -35,7 +35,7 @@ const StylesHome = styled.div`
 
 const StylesJum = styled.div`
     .jumbo {
-        background: url(https://www.pixelstalk.net/wp-content/uploads/2016/04/Blue-rose-wallpaper-HD.jpg) no-repeat;
+        background: url(https://amazingpict.com/wp-content/uploads/2014/05/Free-Backgrounds-Future-City.jpg) no-repeat;
         background-color: #000;
         color: #fff;
         height: 200px;
@@ -68,14 +68,6 @@ class App extends Component {
         <StylesNav>
           <Navbar expand="lg fixed-top">
             <Navbar.Brand href="/">Poemas del Alma</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="ml-auto">
-                <Nav.Item><Nav.Link href="/">Home</Nav.Link></Nav.Item>
-                <Nav.Item><Nav.Link href="/contact">Contact</Nav.Link></Nav.Item>
-                <Nav.Item><Nav.Link href="/about">About</Nav.Link></Nav.Item>
-              </Nav>
-            </Navbar.Collapse>
           </Navbar>
         </StylesNav>
 
