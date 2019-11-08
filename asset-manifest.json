@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/FirstBlogs/static/css/main.084b2b91.chunk.css",
-    "main.js": "/FirstBlogs/static/js/main.e3716ae7.chunk.js",
-    "main.js.map": "/FirstBlogs/static/js/main.e3716ae7.chunk.js.map",
+    "main.js": "/FirstBlogs/static/js/main.98330ca5.chunk.js",
+    "main.js.map": "/FirstBlogs/static/js/main.98330ca5.chunk.js.map",
     "runtime-main.js": "/FirstBlogs/static/js/runtime-main.453e9ec5.js",
     "runtime-main.js.map": "/FirstBlogs/static/js/runtime-main.453e9ec5.js.map",
-    "static/js/2.cc2ed93f.chunk.js": "/FirstBlogs/static/js/2.cc2ed93f.chunk.js",
-    "static/js/2.cc2ed93f.chunk.js.map": "/FirstBlogs/static/js/2.cc2ed93f.chunk.js.map",
+    "static/js/2.a7124d4f.chunk.js": "/FirstBlogs/static/js/2.a7124d4f.chunk.js",
+    "static/js/2.a7124d4f.chunk.js.map": "/FirstBlogs/static/js/2.a7124d4f.chunk.js.map",
     "index.html": "/FirstBlogs/index.html",
-    "precache-manifest.f82f9df9b428f12f78eec0d16ec81655.js": "/FirstBlogs/precache-manifest.f82f9df9b428f12f78eec0d16ec81655.js",
+    "precache-manifest.7b7d8c9cbc8b87ffada39010cd9e947b.js": "/FirstBlogs/precache-manifest.7b7d8c9cbc8b87ffada39010cd9e947b.js",
     "service-worker.js": "/FirstBlogs/service-worker.js",
     "static/css/main.084b2b91.chunk.css.map": "/FirstBlogs/static/css/main.084b2b91.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.453e9ec5.js",
-    "static/js/2.cc2ed93f.chunk.js",
+    "static/js/2.a7124d4f.chunk.js",
     "static/css/main.084b2b91.chunk.css",
-    "static/js/main.e3716ae7.chunk.js"
+    "static/js/main.98330ca5.chunk.js"
   ]
 }
