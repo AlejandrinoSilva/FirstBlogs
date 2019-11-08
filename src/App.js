@@ -198,7 +198,7 @@ class App extends Component {
         <StylesFoo>
           <footer className="footer mt-auto py-3 con-color">
             <div className="container">
-              <span className="text-muted">Pagina con licencia CC</span>
+              <span className="text-muted">Pagina con licencia CC</span> <div>Iconos diseñados por <a href="https://www.flaticon.es/autores/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
             </div>
           </footer>
         </StylesFoo>
