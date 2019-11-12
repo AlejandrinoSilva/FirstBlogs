@@ -5,7 +5,7 @@ import { Home } from './components/Home';
 import { About } from './components/About';
 import { Contact } from './components/Contact';
 import { Layout } from './components/Layout';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
 const StylesNav = styled.div`
     .navbar{
@@ -89,11 +89,9 @@ class App extends Component {
         </StylesJum>
 
         <Layout>
-          <Router>
-            <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/contact" component={Contact} />
-          </Router>
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact} />
         </Layout>
 
         <StylesFoo>
