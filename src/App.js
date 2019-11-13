@@ -1,10 +1,8 @@
 import React, { Fragment, Component } from 'react';
 import { Nav, Navbar, Container, Jumbotron as Jumbo } from 'react-bootstrap';
 import styled from 'styled-components';
-import { Home } from './components/Home';
-import { About } from './components/About';
-import { Contact } from './components/Contact';
-import { Route } from 'react-router-dom';
+import { Home, About, Contact } from './components/Home';
+import { Route, Switch } from 'react-router-dom';
 
 const StylesNav = styled.div`
     .navbar{
@@ -86,11 +84,13 @@ class App extends Component {
           </Jumbo>
         </StylesJum>
 
-        <Container>
-          <Route exact path="/" component={Home} />
-          <Route path="#/about" component={About} />
-          <Route path="#/contact" component={Contact} />
-        </Container>
+        <Layout>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="#/about" component={About} />
+            <Route path="#/contact" component={Contact} />
+          </Switch>
+        </Layout>
 
         <StylesFoo>
           <footer className="footer mt-auto py-3 con-color">
@@ -111,5 +111,11 @@ class App extends Component {
   }
 
 }
+
+const Layout = (props) => (
+  <Container>
+    {props.children}
+  </Container>
+)
 
 export default App;
