@@ -64,11 +64,11 @@ class App extends Component {
       <Fragment>
         <StylesNav>
           <Navbar expand="lg fixed-top">
-            <Navbar.Brand href="/">Mi primer blog con React Js</Navbar.Brand>
+            <Navbar.Brand href="/FirstBlogs">Mi primer blog con React Js</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ml-auto">
-                <Nav.Item><Nav.Link href="/">Home</Nav.Link></Nav.Item>
+                <Nav.Item><Nav.Link href="/FirstBlogs">Home</Nav.Link></Nav.Item>
                 <Nav.Item><Nav.Link href="#/contact">Contact</Nav.Link></Nav.Item>
                 <Nav.Item><Nav.Link href="#/about">About</Nav.Link></Nav.Item>
               </Nav>
