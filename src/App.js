@@ -5,6 +5,7 @@ import { Home } from './components/Home';
 import { About } from './components/About';
 import { Contact } from './components/Contact';
 import { Route } from 'react-router-dom';
+import { NoMatch } from './components/NoMatch';
 
 const StylesNav = styled.div`
     .navbar{
@@ -68,10 +69,9 @@ class App extends Component {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ml-auto">
-                <Nav.Item><Nav.Link href="https://www.facebook.com/ramon.themax">Facebook</Nav.Link></Nav.Item>
-                <Nav.Item><Nav.Link href="https://www.linkedin.com/in/ramon-alejandrino-silva">LinkedIn</Nav.Link></Nav.Item>
-                <Nav.Item><Nav.Link href="https://twitter.com/ralejandrino">Twitter</Nav.Link></Nav.Item>
-                <Nav.Item><Nav.Link href="https://github.com/AlejandrinoSilva/">GitHub</Nav.Link></Nav.Item>
+                <Nav.Item><Nav.Link href="/">Home</Nav.Link></Nav.Item>
+                <Nav.Item><Nav.Link href="/contact">Contact</Nav.Link></Nav.Item>
+                <Nav.Item><Nav.Link href="/about">About</Nav.Link></Nav.Item>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
@@ -91,12 +91,19 @@ class App extends Component {
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
+          <Route component={NoMatch} />
         </Container>
 
         <StylesFoo>
           <footer className="footer mt-auto py-3 con-color">
             <div className="container">
               <span className="text-muted">Pagina con licencia CC  -- Iconos diseñados por <a href="https://www.flaticon.es/autores/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></span>
+              <Nav className="ml-auto">
+                <Nav.Item><Nav.Link href="https://www.facebook.com/ramon.themax">Facebook</Nav.Link></Nav.Item>
+                <Nav.Item><Nav.Link href="https://www.linkedin.com/in/ramon-alejandrino-silva">LinkedIn</Nav.Link></Nav.Item>
+                <Nav.Item><Nav.Link href="https://twitter.com/ralejandrino">Twitter</Nav.Link></Nav.Item>
+                <Nav.Item><Nav.Link href="https://github.com/AlejandrinoSilva/">GitHub</Nav.Link></Nav.Item>
+              </Nav>
             </div>
           </footer>
         </StylesFoo>
