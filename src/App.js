@@ -54,7 +54,7 @@ const StylesJum = styled.div`
 
     .tit {
         font-family: 'EB Garamond', serif;
-        font-size: 65px;
+        font-size: 63px;
     }
 `;
 
