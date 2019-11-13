@@ -1,10 +1,18 @@
 import React from 'react';
 import { Card } from 'react-bootstrap'
+import styled from 'styled-components';
+
+const Styles = styled.div`
+    .div-all{
+        position: relative;
+    }
+    
+`;
 
 
 
 export const About = () => (
-    <div>
+    <Styles>
         <h2>Where does it come from? / About</h2>
         <Card style={{ width: '18rem' }}>
             <Card.Img variant="top" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpng.pngtree.com%2Felement_our%2Fpng_detail%2F20181206%2Fusers-vector-icon-png_260862.jpg&f=1&nofb=1" />
@@ -25,5 +33,5 @@ export const About = () => (
             </nav>
         </div>
         <br />
-    </div>
+    </Styles>
 )
