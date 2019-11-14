@@ -67,8 +67,8 @@ class App extends Component {
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ml-auto">
                 <Nav.Item><Nav.Link href="/FirstBlogs">Home</Nav.Link></Nav.Item>
-                <Nav.Item><Nav.Link href="#/contact">Contact</Nav.Link></Nav.Item>
-                <Nav.Item><Nav.Link href="#/about">About</Nav.Link></Nav.Item>
+                <Nav.Item><Nav.Link href="/contact">Contact</Nav.Link></Nav.Item>
+                <Nav.Item><Nav.Link href="/about">About</Nav.Link></Nav.Item>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
@@ -87,8 +87,8 @@ class App extends Component {
         <Layout>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="#/about" component={About} />
-            <Route path="#/contact" component={Contact} />
+            <Route path="/about" component={About} />
+            <Route path="/contact" component={Contact} />
           </Switch>
         </Layout>
 
