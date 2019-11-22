@@ -66,9 +66,9 @@ class App extends Component {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ml-auto">
-                <Nav.Item><Link className="Nav__link" to="/">Home</Link></Nav.Item>
-                <Nav.Item><Link className="Nav__link" to="/contact">Contact</Link></Nav.Item>
-                <Nav.Item><Link className="Nav__link" to="/about">About</Link></Nav.Item>
+                <Nav.Item><Link className="nav-link" to="/">Home</Link></Nav.Item>
+                <Nav.Item><Link className="nav-link" to="/contact">Contact</Link></Nav.Item>
+                <Nav.Item><Link className="nav-link" to="/about">About</Link></Nav.Item>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
