@@ -67,8 +67,8 @@ class App extends Component {
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ml-auto">
                 <Nav.Item><Link to="/FirstBlogs">Home</Link></Nav.Item>
-                <Nav.Item><Link to="#/contact">Contact</Link></Nav.Item>
-                <Nav.Item><Link to="#/about">About</Link></Nav.Item>
+                <Nav.Item><Link to="/contact">Contact</Link></Nav.Item>
+                <Nav.Item><Link to="/about">About</Link></Nav.Item>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
