@@ -66,7 +66,7 @@ class App extends Component {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ml-auto">
-                <Nav.Item><Link to="../">Home</Link></Nav.Item>
+                <Nav.Item><Link to="/">Home</Link></Nav.Item>
                 <Nav.Item><Link to="/contact">Contact</Link></Nav.Item>
                 <Nav.Item><Link to="/about">About</Link></Nav.Item>
               </Nav>
@@ -86,7 +86,7 @@ class App extends Component {
 
         <Layout>
           <Switch>
-            <Route exact path="../" component={Home} />
+            <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
           </Switch>
