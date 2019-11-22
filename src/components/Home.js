@@ -60,11 +60,16 @@ export const PostList = () => (
 
                     <div className="blog-post">
                         <h2 className="blog-post-title">{postDetail.title}</h2>
-                        <p className="blog-post-meta">{postDetail.date} by <a href="#">Mark</a></p>
+                        <p className="blog-post-meta">{postDetail.date} by <a href="/">{postDetail.author}</a></p>
                         <p>{postDetail.content}</p>
                     </div>
+
+                    <nav className="blog-pagination">
+                        <a className="btn btn-outline-primary" href="/">Older</a>
+                        <a className="btn btn-outline-secondary disabled" href="/" tabindex="-1" aria-disabled="true">Newer</a>
+                    </nav>
                 </div>
             </div>
         )
-    }
-    )
+    })
+)
