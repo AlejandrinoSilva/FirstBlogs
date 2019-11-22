@@ -15,7 +15,9 @@ export const Home = () => (
         <h2>What is Lorem Ipsum? / Home</h2>
         <main role="main" className="container">
             <div className="row">
-                <PostList />
+                <div class="col-md-8 blog-main">
+                    <PostList />
+                </div>
                 <aside className="col-md-4 blog-sidebar">
                     <div className="p-4 mb-3 bg-light rounded">
                         <h4 className="font-italic">About</h4>
