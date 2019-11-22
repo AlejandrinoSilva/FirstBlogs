@@ -8,7 +8,21 @@
     },
     {
         "id": 2,
-        "title": "Setup React",
+        "title": "Setup React 1",
+        "content": "Setting up react is easy. Learn more about it!",
+        "date": "1-28-2018",
+        "author": "setup-react"
+    },
+    {
+        "id": 3,
+        "title": "Setup React 2",
+        "content": "Setting up react is easy. Learn more about it!",
+        "date": "1-28-2018",
+        "author": "setup-react"
+    },
+    {
+        "id": 4,
+        "title": "Setup React 3",
         "content": "Setting up react is easy. Learn more about it!",
         "date": "1-28-2018",
         "author": "setup-react"
