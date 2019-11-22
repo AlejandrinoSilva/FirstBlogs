@@ -2,7 +2,7 @@ import React, { Fragment, Component } from 'react';
 import { Nav, Navbar, Container, Jumbotron as Jumbo } from 'react-bootstrap';
 import styled from 'styled-components';
 import { Home, About, Contact } from './components/Home';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Link } from 'react-router-dom';
 
 const StylesNav = styled.div`
     .navbar{
@@ -66,9 +66,9 @@ class App extends Component {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ml-auto">
-                <Nav.Item><Nav.Link href="/FirstBlogs">Home</Nav.Link></Nav.Item>
-                <Nav.Item><Nav.Link href="#/contact">Contact</Nav.Link></Nav.Item>
-                <Nav.Item><Nav.Link href="#/about">About</Nav.Link></Nav.Item>
+                <Nav.Item><Link to="/FirstBlogs">Home</Link></Nav.Item>
+                <Nav.Item><Link to="#/contact">Contact</Link></Nav.Item>
+                <Nav.Item><Link to="#/about">About</Link></Nav.Item>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
