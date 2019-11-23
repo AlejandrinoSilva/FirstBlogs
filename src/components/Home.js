@@ -14,7 +14,7 @@ const Button = styled.a`
   margin: 0.5rem 1rem;
   width: 5rem;
   background: transparent;
-  border: 1px solid black;
+  border: 1px solid white;
 `;
 
 export const Home = () => (
@@ -51,7 +51,7 @@ export const Home = () => (
                     <div className="p-4">
                         <h4 className="font-italic">Elsewhere</h4>
                         <ol className="list-unstyled">
-                            <li><Button href="https://github.com/AlejandrinoSilva/">GitHub</Button></li>
+                            <li><Image src="https://github.com/fluidicon.png" roundedCircle /><Button href="https://github.com/AlejandrinoSilva/">GitHub</Button></li>
                             <li><Button href="https://twitter.com/ralejandrino">Twitter</Button></li>
                             <li><Button href="https://www.facebook.com/ramon.themax">Facebook</Button></li>
                             <li><Button href="https://www.linkedin.com/in/ramon-alejandrino-silva">LinkedIn</Button></li>

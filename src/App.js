@@ -93,13 +93,9 @@ class App extends Component {
         <StylesFoo>
           <footer className="footer mt-auto py-3 con-color">
             <div className="container">
-              <span className="text-muted">Pagina con licencia CC  -- Iconos diseñados por <a href="https://www.flaticon.es/autores/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></span>
-              <Nav className="ml-auto">
-                <Nav.Item><Nav.Link href="https://www.facebook.com/ramon.themax">Facebook</Nav.Link></Nav.Item>
-                <Nav.Item><Nav.Link href="https://www.linkedin.com/in/ramon-alejandrino-silva">LinkedIn</Nav.Link></Nav.Item>
-                <Nav.Item><Nav.Link href="https://twitter.com/ralejandrino">Twitter</Nav.Link></Nav.Item>
-                <Nav.Item><Nav.Link href="https://github.com/AlejandrinoSilva/">GitHub</Nav.Link></Nav.Item>
-              </Nav>
+              <span className="text-muted">Pagina con licencia CC</span>
+              <span><div>Iconos diseñados por <a href="https://www.flaticon.es/autores/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div></span>
+              <span><div>Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div></span>
             </div>
           </footer>
         </StylesFoo>
