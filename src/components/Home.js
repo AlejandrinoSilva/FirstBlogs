@@ -51,9 +51,9 @@ export const Home = () => (
                     <div className="p-4">
                         <h4 className="font-italic">Elsewhere</h4>
                         <ol className="list-unstyled">
-                            <li><Image src="https://github.com/fluidicon.png" height="16px" width="16px" roundedCircle /><Button href="https://github.com/AlejandrinoSilva/">GitHub</Button></li>
-                            <li><Button href="https://twitter.com/ralejandrino">Twitter</Button></li>
-                            <li><Button href="https://www.facebook.com/ramon.themax">Facebook</Button></li>
+                            <li><Image src="https://github.com/fluidicon.png" height="32px" width="32px" roundedCircle /><Button href="https://github.com/AlejandrinoSilva/">GitHub</Button></li>
+                            <li><Image src=" https://abs.twimg.com/favicons/favicon.ico" height="32px" width="32px" roundedCircle /><Button href="https://twitter.com/ralejandrino">Twitter</Button></li>
+                            <li><Image src="https://static.xx.fbcdn.net/rsrc.php/yo/r/iRmz9lCMBD2.ico" height="32px" width="32px" roundedCircle /><Button href="https://www.facebook.com/ramon.themax">Facebook</Button></li>
                             <li><Button href="https://www.linkedin.com/in/ramon-alejandrino-silva">LinkedIn</Button></li>
                         </ol>
                     </div>
