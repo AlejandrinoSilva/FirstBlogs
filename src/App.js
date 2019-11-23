@@ -68,7 +68,6 @@ class App extends Component {
               <Nav className="ml-auto">
                 <Nav.Item><Link className="nav-link" to="/">Home</Link></Nav.Item>
                 <Nav.Item><Link className="nav-link" to="/contact">Contact</Link></Nav.Item>
-                <Nav.Item><Link className="nav-link" to="/about">About</Link></Nav.Item>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
@@ -87,7 +86,6 @@ class App extends Component {
         <Layout>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
           </Switch>
         </Layout>

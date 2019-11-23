@@ -9,6 +9,15 @@ const Styles = styled.div`
     }
     
 `;
+const Button = styled.a`
+  display: inline-block;
+  border-radius: 3px;
+  padding: 0.5rem 0;
+  margin: 0.5rem 1rem;
+  width: 11rem;
+  background: transparent;
+  border: 2px solid white;
+`;
 
 export const Home = () => (
     <Styles>
@@ -44,9 +53,10 @@ export const Home = () => (
                     <div className="p-4">
                         <h4 className="font-italic">Elsewhere</h4>
                         <ol className="list-unstyled">
-                            <li><a href="/">GitHub</a></li>
-                            <li><a href="/">Twitter</a></li>
-                            <li><a href="/">Facebook</a></li>
+                            <li><Button href="https://github.com/AlejandrinoSilva/">GitHub</Button></li>
+                            <li><Button href="https://twitter.com/ralejandrino">Twitter</Button></li>
+                            <li><Button href="https://www.facebook.com/ramon.themax">Facebook</Button></li>
+                            <li><Button href="https://www.linkedin.com/in/ramon-alejandrino-silva">LinkedIn</Button></li>
                         </ol>
                     </div>
                 </aside>
