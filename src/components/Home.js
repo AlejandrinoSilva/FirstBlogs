@@ -12,16 +12,15 @@ const Styles = styled.div`
 
 export const Home = () => (
     <Styles>
-        <h2>What is Lorem Ipsum? / Home</h2>
         <main role="main" className="container">
             <div className="row">
-                <div class="col-md-8 blog-main">
+                <div className="col-md-8 blog-main">
+                    <h2 className="pb-4 mb-4 font-italic border-bottom">From the Firehose</h2>
                     <PostList />
                 </div>
                 <aside className="col-md-4 blog-sidebar">
                     <div className="p-4 mb-3 bg-light rounded">
-                        <h4 className="font-italic">About</h4>
-                        <p className="mb-0">Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+                        <About />
                     </div>
 
                     <div className="p-4">
@@ -59,7 +58,6 @@ export const Home = () => (
 
 export const About = () => (
     <Styles>
-        <h2>Where does it come from? / About</h2>
         <Card style={{ width: '18rem' }}>
             <Card.Img variant="top" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpng.pngtree.com%2Felement_our%2Fpng_detail%2F20181206%2Fusers-vector-icon-png_260862.jpg&f=1&nofb=1" />
             <Card.Body>
@@ -69,17 +67,6 @@ export const About = () => (
                 </Card.Text>
             </Card.Body>
         </Card>
-        <br />
-        <h3>Tambien puedes seguirme:</h3>
-        <div className="nav-scroller py-1 mb-2">
-            <nav className="nav d-flex justify-content-between">
-                <a className="p-2 text-muted" href="/">Facebook</a>
-                <a className="p-2 text-muted" href="/">Twitter</a>
-                <a className="p-2 text-muted" href="/">Instagram</a>
-                <a className="p-2 text-muted" href="/">LinkedIn</a>
-            </nav>
-        </div>
-        <br />
     </Styles>
 )
 
@@ -100,6 +87,7 @@ export const PostList = () => (
                     <p className="blog-post-meta">{postDetail.date} by <a href="/">{postDetail.author}</a></p>
                     <p>{postDetail.content}</p>
                 </div>
+                <hr />
             </div>
         )
     })
