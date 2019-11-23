@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Card } from 'react-bootstrap';
+import { Card, Image } from 'react-bootstrap';
 import PostData from '../data/datalist.json';
 
 const Styles = styled.div`
@@ -51,7 +51,7 @@ export const Home = () => (
                     <div className="p-4">
                         <h4 className="font-italic">Elsewhere</h4>
                         <ol className="list-unstyled">
-                            <li><Image src="https://github.com/fluidicon.png" roundedCircle /><Button href="https://github.com/AlejandrinoSilva/">GitHub</Button></li>
+                            <li><Image src="https://github.com/fluidicon.png" height="16px" width="16px" roundedCircle /><Button href="https://github.com/AlejandrinoSilva/">GitHub</Button></li>
                             <li><Button href="https://twitter.com/ralejandrino">Twitter</Button></li>
                             <li><Button href="https://www.facebook.com/ramon.themax">Facebook</Button></li>
                             <li><Button href="https://www.linkedin.com/in/ramon-alejandrino-silva">LinkedIn</Button></li>
