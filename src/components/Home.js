@@ -12,11 +12,10 @@ const Styles = styled.div`
 const Button = styled.a`
   display: inline-block;
   border-radius: 1px;
-  padding: 0.5rem 0;
   margin: 0.5rem 1rem;
-  width: 11rem;
+  width: 5rem;
   background: transparent;
-  border: 1px solid white;
+  border: 1px solid black;
 `;
 
 export const Home = () => (
