@@ -10,7 +10,6 @@ const Styles = styled.div`
     
 `;
 const Button = styled.a`
-  display: inline-block;
   border-radius: 1px;
   margin: 0.5rem 1rem;
   width: 5rem;
