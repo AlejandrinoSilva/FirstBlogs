@@ -85,14 +85,14 @@ export const QuizBee = () => (
         questionBank: [],
         score: 0,
         responses: 0
-    };
+    }
     getQuestions = () => {
         quizService().then(question => {
             this.setState({
                 questionBank: question
             });
         });
-    };
+    }
     computeAnswer = (answer, correctAnswer) => {
         if (answer === correctAnswer) {
             this.setState({
@@ -102,17 +102,17 @@ export const QuizBee = () => (
         this.setState({
             responses: this.setState.responses < 5 ? this.setState.responses + 1 : 5
         })
-    };
+    }
     playAgain = () => {
         this.getQuestions();
         this.setState({
             score: 0,
             responses: 0,
         })
-    };
+    }
     componentDidMount() {
         this.getQuestions();
-    };
+    }
     render() {
         return (
             <div className="container">
