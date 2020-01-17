@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component, useState } from 'react';
 import styled from 'styled-components';
 import { Card, Image } from 'react-bootstrap';
 import PostData from '../data/datalist.json';
@@ -26,7 +26,6 @@ export const Home = () => (
                     <h2 className="pb-4 mb-4 font-italic border-bottom">From the Firehose</h2>
                     <QuizBee />
                     <hr />
-                    <PostList />
                 </div>
                 <aside className="col-md-4 blog-sidebar">
                     <div className="p-4 mb-3 bg-light rounded">
@@ -80,19 +79,19 @@ export const Contact = () => (
     </Styles>
 )
 
-export const QuizBee = () => (
+export class QuizBee extends Component {
     state = {
         questionBank: [],
         score: 0,
         responses: 0
-    }
+    };
     getQuestions = () => {
         quizService().then(question => {
             this.setState({
                 questionBank: question
             });
         });
-    }
+    };
     computeAnswer = (answer, correctAnswer) => {
         if (answer === correctAnswer) {
             this.setState({
@@ -102,34 +101,33 @@ export const QuizBee = () => (
         this.setState({
             responses: this.setState.responses < 5 ? this.setState.responses + 1 : 5
         })
-    }
+    };
     playAgain = () => {
         this.getQuestions();
         this.setState({
             score: 0,
             responses: 0,
         })
-    }
-    componentDidMount() {
+    };
+    componentDidMount = () => {
         this.getQuestions();
-    }
-    render() {
+    };
+    render(){
         return (
-            <div className="container">
-                <div className="title">
-                    QuizBee
-                </div>
-                {this.state.questionBank.length > 0 && this.state.responses < 5 &&
-                    this.state.questionBank.map(({ question, answers, correct, questionId }) => (<QuestionBox question={question} options={answers} key={questionId} selected={answers => this.computeAnswer(answer, correct)} />))}
-
-                {this.state.responses === 5 ? (<Result score={this.state.score} playAgain={this.playAgain} />) : null}
-            </div>
-        );
+                <div className="container">
+                    <div className="title">
+                        QuizBee
+                    </div>
+                    {this.state.questionBank.length > 0 && this.state.responses < 5 &&
+                        this.state.questionBank.map(({ question, answers, correct, questionId }) => (<QuestionBox question={question} options={answers} key={questionId} selected={answers => this.computeAnswer(answer, correct)} />))}
+                        {this.state.responses === 5 ? (<Result score={this.state.score} playAgain={this.playAgain} />) : null}
+                    </div>
+                );
     }
-)
+}
 
 
-
+/*
 export const PostList = () => (
     PostData.map((postDetail, index) => {
         return (
@@ -142,10 +140,10 @@ export const PostList = () => (
                 </div>
                 <hr />
             </div>
-        )
-    })
+        );
+    }),
 )
-
+*/
 export const QuestionBox = ({question, options, selected}) => {
   const [answer, setAnswer] = useState(options);
   return (
