@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { Card, Image } from 'react-bootstrap';
 import PostData from '../data/datalist.json';
-import QuizData from '../data/quizdata.json';
 
 const Styles = styled.div`
     .div-all{
