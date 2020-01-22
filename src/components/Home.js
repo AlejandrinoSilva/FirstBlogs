@@ -83,7 +83,7 @@ export const PostList = () => (
 
             <div className="col-md-8 blog-main">
                 <div className="blog-post">
-                    <h2 className="blog-post-title">{postDetail.title}</h2>
+                    <h2 className="blog-post-title"><ruby>{postDetail.title}</ruby></h2>
                     <p className="blog-post-meta">{postDetail.date} by <a href="/">{postDetail.author}</a></p>
                     <p>{postDetail.content}</p>
                 </div>
