@@ -1,8 +1,10 @@
-import React, { Component, useState }from 'react';
+import React, { Component }from 'react';
 import styled from 'styled-components';
 import { Card, Image } from 'react-bootstrap';
 import PostData from '../data/datalist.json';
 import quizService from "../data";
+import QuestionBox from "../components/QuestionBox";
+import Result from "../components/Result";
 
 const Styles = styled.div`
     .div-all{
@@ -136,40 +138,15 @@ export class QuizBee extends Component {
                     QuizBee
                 </div>
                 {this.state.questionBank.length > 0 && this.state.responses < 5 &&
-                    this.state.questionBank.map(({ question, answers, correct, questionId }) => (<QuestionBox question={question} options={answers} key={questionId} selected={answers => this.computeAnswer(answer, correct)} />))}
+                    this.state.questionBank.map(({ question, answers, correct, questionId }) => (
+                        <QuestionBox question={question}
+                            options={answers}
+                            key={questionId}
+                            selected={answer => this.computeAnswer(answer, correct)} 
+                        />))}
 
                 {this.state.responses === 5 ? (<Result score={this.state.score} playAgain={this.playAgain} />) : null}
             </div>
         );
     }
 }
-
-export const QuestionBox = ({question, options, selected}) => {
-  const [answer, setAnswer] = useState(options);
-  return (
-    <div className="questionBox">
-      <div className="question">{question}</div>
-      {answer.map((text, index) => (
-        <button
-          key={index}
-          className="answerBtn"
-          onClick={() => {
-            setAnswer([text]);
-            selected(text);
-          }}
-        >
-          {text}
-        </button>
-      ))}
-    </div>
-  );
-};
-
-export const Result = ({score, playAgain}) => (
-  <div className="score-board">
-    <div className="score">You scored {score} / 5 correct answers!</div>
-    <button className="playBtn" onClick={playAgain}>
-      Play again!
-    </button>
-  </div>
-);
