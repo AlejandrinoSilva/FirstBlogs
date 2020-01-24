@@ -134,7 +134,7 @@ export class QuizBee extends Component {
     };
     render() {
         return (
-            <div className="container">
+            <div className="col-md-8 blog-main">
                 <div className="title">
                     QuizBee
                 </div>
