@@ -5,6 +5,7 @@ import PostData from '../data/datalist.json';
 import quizService from "../data";
 import QuestionBox from "../components/QuestionBox";
 import Result from "../components/Result";
+import "../data/style.css";
 
 const Styles = styled.div`
     .div-all{
@@ -142,7 +143,7 @@ export class QuizBee extends Component {
                         <QuestionBox question={question}
                             options={answers}
                             key={questionId}
-                            selected={answer => this.computeAnswer(answer, correct)} 
+                            selected={answer => this.computeAnswer(answer, correct)}
                         />))}
 
                 {this.state.responses === 5 ? (<Result score={this.state.score} playAgain={this.playAgain} />) : null}
