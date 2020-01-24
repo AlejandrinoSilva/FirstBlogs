@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/FirstBlogs/static/css/main.273a8abd.chunk.css",
-    "main.js": "/FirstBlogs/static/js/main.555376b9.chunk.js",
-    "main.js.map": "/FirstBlogs/static/js/main.555376b9.chunk.js.map",
+    "main.js": "/FirstBlogs/static/js/main.17d9c8c1.chunk.js",
+    "main.js.map": "/FirstBlogs/static/js/main.17d9c8c1.chunk.js.map",
     "runtime-main.js": "/FirstBlogs/static/js/runtime-main.453e9ec5.js",
     "runtime-main.js.map": "/FirstBlogs/static/js/runtime-main.453e9ec5.js.map",
     "static/js/2.fd3b701b.chunk.js": "/FirstBlogs/static/js/2.fd3b701b.chunk.js",
     "static/js/2.fd3b701b.chunk.js.map": "/FirstBlogs/static/js/2.fd3b701b.chunk.js.map",
     "index.html": "/FirstBlogs/index.html",
-    "precache-manifest.045a01482454fbbe09c78d668d2aa3e9.js": "/FirstBlogs/precache-manifest.045a01482454fbbe09c78d668d2aa3e9.js",
+    "precache-manifest.9994c8862a5bdebc78b02979ee4449be.js": "/FirstBlogs/precache-manifest.9994c8862a5bdebc78b02979ee4449be.js",
     "service-worker.js": "/FirstBlogs/service-worker.js",
     "static/css/main.273a8abd.chunk.css.map": "/FirstBlogs/static/css/main.273a8abd.chunk.css.map"
   },
@@ -16,6 +16,6 @@
     "static/js/runtime-main.453e9ec5.js",
     "static/js/2.fd3b701b.chunk.js",
     "static/css/main.273a8abd.chunk.css",
-    "static/js/main.555376b9.chunk.js"
+    "static/js/main.17d9c8c1.chunk.js"
   ]
 }
