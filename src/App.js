@@ -1,7 +1,7 @@
 import React, { Fragment, Component } from 'react';
 import { Nav, Navbar, Container, Jumbotron as Jumbo } from 'react-bootstrap';
 import styled from 'styled-components';
-import { Home, About, Contact } from './components/Home';
+import { Home, About, Contact, QuizBee } from './components/Home';
 import { Route, Switch, Link } from 'react-router-dom';
 
 const StylesNav = styled.div`
@@ -21,11 +21,11 @@ const StylesNav = styled.div`
 const StylesFoo = styled.footer`
     .con-color {
         background-color: black;
-        position:relative; 
-        bottom: 0; 
+        position:relative;
+        bottom: 0;
         width: 100%;
     }
-    
+
 `;
 
 const StylesJum = styled.div`
@@ -68,6 +68,7 @@ class App extends Component {
               <Nav className="ml-auto">
                 <Nav.Item><Link className="nav-link" to="/">Home</Link></Nav.Item>
                 <Nav.Item><Link className="nav-link" to="/contact">Contact</Link></Nav.Item>
+                <Nav.Item><Link className="nav-link" to="/QuizBee">QuizBee</Link></Nav.Item>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
@@ -87,6 +88,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/contact" component={Contact} />
+            <Route path="/QuizBee" component={QuizBee} />
           </Switch>
         </Layout>
 

@@ -27,7 +27,7 @@ export const Home = () => (
             <div className="row">
                 <div className="col-md-8 blog-main">
                     <h2 className="pb-4 mb-4 font-italic border-bottom">From the Firehose</h2>
-                    <QuizBee />
+
                     <PostList />
                 </div>
                 <aside className="col-md-4 blog-sidebar">
