@@ -1,7 +1,8 @@
-import React { Component, useState }from 'react';
+import React, { Component, useState }from 'react';
 import styled from 'styled-components';
 import { Card, Image } from 'react-bootstrap';
 import PostData from '../data/datalist.json';
+import quizService from "../data";
 
 const Styles = styled.div`
     .div-all{
@@ -95,7 +96,7 @@ export const PostList = () => (
 )
 
 // -------------------------------------------------------
-exxport class QuizBee extends Component {
+export class QuizBee extends Component {
     state = {
         questionBank: [],
         score: 0,
@@ -141,7 +142,7 @@ exxport class QuizBee extends Component {
             </div>
         );
     }
-)
+}
 
 export const QuestionBox = ({question, options, selected}) => {
   const [answer, setAnswer] = useState(options);
