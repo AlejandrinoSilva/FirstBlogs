@@ -1,11 +1,18 @@
-import React, { Component }from 'react';
+import React, { Component } from 'react';
 import quizService from "../data";
-import QuestionBox from "../components/QuestionBox";
-import Result from "../components/Result";
+import QuestionBox from "./QuestionBox";
+import Result from "./Result";
 import "../data/style.css";
+import styled from 'styled-components';
 
+const Styles = styled.div`
+    .div-all{
+        position: relative;
+    }
 
-export class QuizBee extends Component {
+`;
+
+class QuizBee extends Component {
     state = {
         questionBank: [],
         score: 0,
@@ -59,3 +66,5 @@ export class QuizBee extends Component {
         );
     }
 }
+
+export default QuizBee;

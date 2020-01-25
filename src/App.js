@@ -1,8 +1,8 @@
 import React, { Fragment, Component } from 'react';
 import { Nav, Navbar, Container, Jumbotron as Jumbo } from 'react-bootstrap';
 import styled from 'styled-components';
-import { Home, About, Contact, QuizBee } from './components/Home';
-import { QuizBee } from '.components/QuizBee'
+import { Home, About, Contact } from './components/Home';
+import QuizBee from './components/QuizBee';
 import { Route, Switch, Link } from 'react-router-dom';
 
 const StylesNav = styled.div`
