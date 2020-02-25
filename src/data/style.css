@@ -44,8 +44,7 @@
 
 .score {
   position: absolute;
-  width: 1024px;
-  font-size: 3em;
+  font-size: 25px;
   top: 250px;
   text-align: center;
 }
