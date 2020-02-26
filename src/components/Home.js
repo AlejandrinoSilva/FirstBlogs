@@ -13,24 +13,20 @@ const Styles = styled.div`
 
 export const About = () => (
     <Styles>
-        <div className="card p-4 mb-3 bg-light rounded">
+        <div className="card p-4 mb-3 rounded">
             <h3 className="card-header">Acerca de mi</h3>
               <div className="card-body">
-                <h5 className="card-title">Special title treatment</h5>
+                <h5 className="card-title">Silva Ramón</h5>
                 <h6 className="card-subtitle text-muted">Support card subtitle</h6>
               </div>
               <Card.Img variant="top" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpng.pngtree.com%2Felement_our%2Fpng_detail%2F20181206%2Fusers-vector-icon-png_260862.jpg&f=1&nofb=1" />
               <div className="card-body">
                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
-              <ul className="list-group list-group-flush">
-                <li className="list-group-item">Cras justo odio</li>
-                <li className="list-group-item">Dapibus ac facilisis in</li>
-                <li className="list-group-item">Vestibulum at eros</li>
-              </ul>
+
               <div className="card-body ">
-                <button type="button" class="btn btn-outline-info"><a href="https://www.linkedin.com/in/ramon-alejandrino-silva" className="card-link text-dark">LinkedIn</a></button>
-                <button type="button" class="btn btn-outline-dark"><a href="https://github.com/AlejandrinoSilva/" className="card-link text-dark">Github</a></button>
+                      <button type="button" className="btn btn-outline-info"><a href="https://www.linkedin.com/in/ramon-alejandrino-silva" className="card-link">LinkedIn</a></button>
+                  <button type="button" className="btn btn-outline-light"><a href="https://github.com/AlejandrinoSilva/" className="card-link">Github</a></button>
               </div>
               <div className="card-footer text-muted">
                 2 days ago
