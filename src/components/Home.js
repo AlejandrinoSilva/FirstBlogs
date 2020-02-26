@@ -24,8 +24,8 @@ export const About = () => (
                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
 
-              <div className="card-body ">
-                      <button type="button" className="btn btn-outline-info"><a href="https://www.linkedin.com/in/ramon-alejandrino-silva" className="card-link">LinkedIn</a></button>
+              <div className="card-body bs-component">
+                  <button type="button" className="btn btn-outline-info"><a href="https://www.linkedin.com/in/ramon-alejandrino-silva" className="card-link">LinkedIn</a></button>
                   <button type="button" className="btn btn-outline-light"><a href="https://github.com/AlejandrinoSilva/" className="card-link">Github</a></button>
               </div>
               <div className="card-footer text-muted">

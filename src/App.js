@@ -59,10 +59,10 @@ class App extends Component {
               <div className="collapse navbar-collapse" id="navbarColor01">
                   <ul className="navbar-nav mr-auto">
                       <li className="nav-item active">
-                          <Link className="nav-link btn btn-outline-success" to="/">Home</Link>
+                          <Link className="nav-link btn nav-item" to="/">Home</Link>
                       </li>
                       <li className="nav-item">
-                          <Link className="nav-link btn btn-outline-info" to="/contact">Contact</Link>
+                          <Link className="nav-link btn nav-item" to="/contact">Contact</Link>
                       </li>
                   </ul>
 
@@ -74,7 +74,7 @@ class App extends Component {
             <div className="overlay"></div>
             <Container>
               <h1 className="tit">Bienvenido</h1>
-              <p>Este es mi primer blog creado con ReactJs todavia esta en preparacion</p>
+          <p>Esta página aun se encuentra en preparación, disculpe la molestia</p>
             </Container>
           </Jumbo>
         </StylesJum>
