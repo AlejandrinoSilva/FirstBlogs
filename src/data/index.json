@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "kanji": "Kanji 0",
+        "reading": "Setting up react is easy. Learn more about it!",
+        "spanish": "Significado",
+        "author": "Japanese"
+    },
+    {
+        "id": 2,
+        "kanji": "Kanji 1",
+        "reading": "Setting up react is easy. Learn more about it!",
+        "spanish": "1-28-2018",
+        "author": "setup-react"
+    },
+    {
+        "id": 3,
+        "kanji": "Kanji 2",
+        "reading": "Setting up react is easy. Learn more about it!",
+        "spanish": "1-28-2018",
+        "author": "setup-react"
+    },
+    {
+        "id": 4,
+        "kanji": "Kanji 3",
+        "reading": "Setting up react is easy. Learn more about it!",
+        "spanish": "1-28-2018",
+        "author": "setup-react"
+    },
+    {
+        "id": 5,
+        "kanji": "Kanji 5",
+        "reading": "Setting up react is easy. Learn more about it!",
+        "spanish": "Significado",
+        "author": "Japanese"
+    },
+    {
+        "id": 6,
+        "kanji": "Kanji 6",
+        "reading": "Setting up react is easy. Learn more about it!",
+        "spanish": "1-28-2018",
+        "author": "setup-react"
+    },
+    {
+        "id": 7,
+        "kanji": "Kanji 7",
+        "reading": "Setting up react is easy. Learn more about it!",
+        "spanish": "1-28-2018",
+        "author": "setup-react"
+    },
+    {
+        "id": 8,
+        "kanji": "Kanji 8",
+        "reading": "Setting up react is easy. Learn more about it!",
+        "spanish": "1-28-2018",
+        "author": "setup-react"
+    },
+    {
+        "id": 9,
+        "kanji": "Kanji 9",
+        "reading": "Setting up react is easy. Learn more about it!",
+        "spanish": "Significado",
+        "author": "Japanese"
+    },
+    {
+        "id": 10,
+        "kanji": "Kanji 10",
+        "reading": "Setting up react is easy. Learn more about it!",
+        "spanish": "1-28-2018",
+        "author": "setup-react"
+    },
+    {
+        "id": 11,
+        "kanji": "Kanji 11",
+        "reading": "Setting up react is easy. Learn more about it!",
+        "spanish": "1-28-2018",
+        "author": "setup-react"
+    },
+    {
+        "id":12,
+        "kanji": "Kanji 12",
+        "reading": "Setting up react is easy. Learn more about it!",
+        "spanish": "1-28-2018",
+        "author": "setup-react"
+    }
+]

@@ -1,7 +1,7 @@
 import React, { Fragment, Component } from 'react';
 import { Container, Jumbotron as Jumbo } from 'react-bootstrap';
 import styled from 'styled-components';
-import { Contact, PostListView, About } from './components/Home';
+import { Contact, PostListView, About, Aprender } from './components/Home';
 import { Route, Switch, Link } from 'react-router-dom';
 
 const Styles = styled.div`
@@ -85,7 +85,7 @@ class App extends Component {
                     <div className="col-md-8 blog-main">
                             <Layout>
                               <Switch>
-                                <Route exact path="/" component={PostListView} />
+                                <Route exact path="/" component={Aprender} />
                                 <Route path="/contact" component={Contact} />
                               </Switch>
                             </Layout>
