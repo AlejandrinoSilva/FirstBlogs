@@ -1,7 +1,7 @@
 import React, { Fragment, Component } from 'react';
 import { Container, Jumbotron as Jumbo } from 'react-bootstrap';
 import styled from 'styled-components';
-import { Contact, PostListView, About, Aprender } from './components/Home';
+import { Contact, PostListView, About } from './components/Home';
 import { Route, Switch, Link } from 'react-router-dom';
 
 const Styles = styled.div`
@@ -51,7 +51,7 @@ class App extends Component {
   render() {
     return (
       <Fragment>
-          <nav className="navbar navbar-expand-lg navbar-dark bg-primary" >
+          <nav className="navbar navbar-expand-lg navbar-dark bg-dark" >
               <a className="navbar-brand" href="/FirstBlogs">Japones Básico</a>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                   <span className="navbar-toggler-icon"></span>
@@ -85,7 +85,7 @@ class App extends Component {
                     <div className="col-md-8 blog-main">
                             <Layout>
                               <Switch>
-                                <Route exact path="/" component={Aprender} />
+                                <Route exact path="/" component={PostListView} />
                                 <Route path="/contact" component={Contact} />
                               </Switch>
                             </Layout>
@@ -97,10 +97,11 @@ class App extends Component {
 
                     </aside>
                 </div>
+                <div className="col-md-8 blog-main">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
             </main>
-            <div className="col-md-8 blog-main">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-    </div>
+
         </Styles>
 
 

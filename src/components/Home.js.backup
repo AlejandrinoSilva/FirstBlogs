@@ -1,8 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { Card } from 'react-bootstrap';
-import posts from '../data/posts.json';
-import Blogs from './Blogs';
+import Table from 'react-bootstrap/Table'
+import PostData from '../data/';
+
+// Nueva Importacion
+import { useState, useEffect } from 'react';
+import Posts from './Posts';
+import Pagination from './Pagination';
+import axios from 'axios';
 
 const Styles = styled.div`
     .div-all{
@@ -48,48 +54,72 @@ export const Contact = () => (
     </Styles>
 )
 
+export const PostList = () => (
+    PostData.map((postDetail, index) => {
+        return (
+            <Styles>
+            <div className="col-md-16 blog-main">
+                    <Table striped bordered>
+                        <tbody>
+                            <tr>
+                                <td><h5 className="blog-post-title">{postDetail.kanji}</h5></td>
+                                <td><p>{postDetail.reading}</p><br /><p>{postDetail.spanish}</p></td>
+                            </tr>
+                        </tbody>
+                    </Table>
+                </div>
+        </Styles>
+        )
+    })
+)
+
 export const PostListView = () => (
             <Styles>
             <h2 className="pb-4 mb-4 font-italic border-bottom">From the PostListView</h2>
-            <Blogs />
+            <PostList />
         </Styles>
 )
 
-//****************************************
-//*******CODIGO DE PRUEBA*****************
-//****************************************
+export const Aprender = () => {
+  const [posts, setPosts] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage] = useState(10);
 
-export class Aprender extends Component {
-    // Hasta aca
-    constructor(props){
-          super(props);
-          this.state = {
-              posts :posts
-          };
-      }
+  componentDidMount() {
+     axios.get('../data/index')
+ };
 
-      render() {
-          const {posts} = this.state;
-          return(
-              <div>
-                  <ol className="item">
-                  {
-                      posts.map(post => (
-                          <li key={post.id} align="start">
-                              <div>
-                                  <p className="title">{post.kanji}</p>
-                                  <p className="body">{post.reading}</p>
-                                  <p className="body">{post.spanish}</p>
-                              </div>
-                          </li>
-                      ))
-                  }
-                  </ol>
-              </div>
-          );
-      }
+  useEffect(() => {
+    const fetchPosts = async () => {
+      setLoading(true);
+      const res = await listres;
+      setPosts(res.data);
+      setLoading(false);
+    };
 
-}
+    fetchPosts();
+  }, []);
 
-// *************************************
-// *************************************
+  console.log(posts);
+
+  // Get current posts
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
+
+  // Change page
+  const paginate = pageNumber => setCurrentPage(pageNumber);
+
+  return (
+    <div className='container mt-5'>
+      <h1 className='text-primary mb-3'>My Blog</h1>
+      <Posts posts={currentPosts} loading={loading} />
+      <Pagination
+        postsPerPage={postsPerPage}
+        totalPosts={posts.length}
+        paginate={paginate}
+      />
+    </div>
+  );
+};
