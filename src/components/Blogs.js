@@ -13,7 +13,7 @@ const Blogs = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       setLoading(true);
-      const res = await axios.get('https://github.com/AlejandrinoSilva/FirstBlogs/blob/master/src/data/posts');
+      const res = await axios.get('../data/posts');
       setPosts(res.data);
       setLoading(false);
     };
