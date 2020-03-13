@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
+import React  from 'react';
 import styled from 'styled-components';
 import { Card } from 'react-bootstrap';
-import posts from '../data/posts.json';
-import Blogs from './Blogs';
+import Blogs from './Blogs.tsx';
 
 const Styles = styled.div`
     .div-all{
@@ -50,46 +49,7 @@ export const Contact = () => (
 
 export const PostListView = () => (
             <Styles>
-            <h2 className="pb-4 mb-4 font-italic border-bottom">From the PostListView</h2>
+            <h2 className="pb-4 mb-4 font-italic border-bottom">Lista de Kanji Nivel N5</h2>
             <Blogs />
         </Styles>
 )
-
-//****************************************
-//*******CODIGO DE PRUEBA*****************
-//****************************************
-
-export class Aprender extends Component {
-    // Hasta aca
-    constructor(props){
-          super(props);
-          this.state = {
-              posts :posts
-          };
-      }
-
-      render() {
-          const {posts} = this.state;
-          return(
-              <div>
-                  <ol className="item">
-                  {
-                      posts.map(post => (
-                          <li key={post.id} align="start">
-                              <div>
-                                  <p className="title">{post.kanji}</p>
-                                  <p className="body">{post.reading}</p>
-                                  <p className="body">{post.spanish}</p>
-                              </div>
-                          </li>
-                      ))
-                  }
-                  </ol>
-              </div>
-          );
-      }
-
-}
-
-// *************************************
-// *************************************
